@@ -11,14 +11,14 @@ O método de previsão exponencial simples é viável em situações onde não h
 
 O método de previsão é calculado multiplicando valores anteriores por pesos relativos, que são calculados baseados em um parâmetro de suavização $\alpha$. Essa será  a magnitude dos pesos aplicados aos valores anteriores da série, onde cada um dos pesos vai decrescendo exponencialmente conforme as observações vão ficando mais antigas. A fórmula geral será:
 
- $Previsão = Peso_t\ Y_t \ + \ Peso_{t-1} Y_{t-1}+\ Peso_{t-2}\ Y_{t-2}\ +\ ...\ +\ (1-α)^n Y_n$
+<img src="https://render.githubusercontent.com/render/math?math=Previsao = Peso_t\ Y_t \ %2B \ Peso_{t-1} Y_{t-1} %2B \ Peso_{t-2}\ Y_{t-2}\ %2B \ ...\ %2B \ (1-\alpha)^n Y_n" />
 
  Onde: <br/>
- $t$: número de períodos anteriores ao atual (t=0 para o mais recente)<br/>
- $Y_t$: valor da série temporal no período $t$<br/>
- $Peso_t$ = $\alpha(1-\alpha)^t$<br/>
- $\alpha$: padrão de suavização entre 0 e 1<br/>
- $n$: número total de períodos<br/>
+ ![formula](https://render.githubusercontent.com/render/math?math=t) : número de períodos anteriores ao atual (t=0 para o mais recente)<br/>
+ ![formula](https://render.githubusercontent.com/render/math?math=Y_t) : valor da série temporal no período $t$<br/>
+ ![formula](https://render.githubusercontent.com/render/math?math=Peso_t=\alpha(1-\alpha)^t)<br/>
+ ![formula](https://render.githubusercontent.com/render/math?math=\alpha) : padrão de suavização entre 0 e 1<br/>
+ ![formula](https://render.githubusercontent.com/render/math?math=n) : número total de períodos<br/>
 
 ## Double Exponential Smoothing (Holt's Linear Trend Method)
 
